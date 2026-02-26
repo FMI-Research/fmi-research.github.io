@@ -1,0 +1,86 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+/* FMI-Research: Paper listing tables */
+.paper-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 2em 0;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.paper-table thead th {
+  background: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.paper-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+.paper-table tbody tr:hover {
+  background: #f9f9f9;
+}
+.paper-table tbody td {
+  padding: 7px 10px;
+  vertical-align: top;
+}
+.paper-table tbody td:first-child {
+  font-weight: 500;
+  min-width: 200px;
+}
+.paper-table tbody td:nth-child(2) {
+  white-space: nowrap;
+  color: #555;
+}
+.paper-table tbody td:nth-child(3) {
+  white-space: nowrap;
+  color: #555;
+  width: 45px;
+}
+.paper-table tbody td:nth-child(4) {
+  color: #777;
+  font-style: italic;
+}

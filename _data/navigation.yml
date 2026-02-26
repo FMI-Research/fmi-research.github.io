@@ -1,0 +1,10 @@
+# main navigation links
+main:
+  - title: "Frontier"
+    url: /frontier/
+  - title: "Papers"
+    url: /papers/
+  - title: "Readings"
+    url: /readings/
+  - title: "About"
+    url: /about/

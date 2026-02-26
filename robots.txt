@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /papers/
+Allow: /frontier/
+Allow: /resources/
+Allow: /files/papers/
+Allow: /about/
+
+Sitemap: https://fmi-research.github.io/sitemap.xml
